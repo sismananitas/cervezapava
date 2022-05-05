@@ -10,7 +10,7 @@
 	<link rel='stylesheet' id='woocommerce-layout-css' href='js/vendor/plugins/woocommerce/assets/css/woocommerce-layout.css' type='text/css' media='all' />
 	<link rel='stylesheet' id='woocommerce-smallscreen-css' href='js/vendor/plugins/woocommerce/assets/css/woocommerce-smallscreen.css' type='text/css' media='only screen and (max-width: 768px)' />
 	<link rel='stylesheet' id='woocommerce-general-css' href='js/vendor/plugins/woocommerce/assets/css/woocommerce.css' type='text/css' media='all' />
-	<link rel='stylesheet' id='laon_wine_house-font-google_fonts-css' href='http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600,600italic,700,700italic%7CLato:400,700&amp;subset=latin,latin-ext' type='text/css' media='all' />
+	<link rel='stylesheet' id='laon_wine_house-font-google_fonts-css' href='https://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600,600italic,700,700italic%7CLato:400,700&amp;subset=latin,latin-ext' type='text/css' media='all' />
 	<link rel='stylesheet' id='laon_wine_house-fontello-css' href='css/fontello/css/fontello-embedded.css' type='text/css' media='all' />
 	<link rel='stylesheet' id='laon_wine_house-main-css' href='css/style.min.css' type='text/css' media='all' />
 	<link rel='stylesheet' id='laon_wine_house-animation-css' href='css/animation.css' type='text/css' media='all' />
@@ -21,7 +21,7 @@
 	<link rel='stylesheet' id='vc_hotspot_cq_style-css' href='js/vendor/plugins/vc-extensions-bundle/hotspot/css/style.min.css' type='text/css' media='all' />
 	<link rel='stylesheet' id='tooltipster-css' href='js/vendor/plugins/vc-extensions-bundle/profilecard/css/tooltipster.css' type='text/css' media='all' />
 	<!-- LOAD JQUERY LIBRARY -->
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
 			
 	<!-- LOADING FONTS AND ICONS -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet" property="stylesheet" media="all" type="text/css" >
