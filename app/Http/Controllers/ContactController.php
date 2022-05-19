@@ -19,7 +19,7 @@ class ContactController extends Controller
             'email' => 'required|email',
             'phone' => 'required',
             'message' => 'required',
-            /* 'g-recaptcha-response' => 'required|captcha' */
+            'g-recaptcha-response' => 'required|captcha'
         ]);
 
         $correo = new Contact($request->all());
