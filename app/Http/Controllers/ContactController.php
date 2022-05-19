@@ -23,7 +23,7 @@ class ContactController extends Controller
         ]);
 
         $correo = new Contact($request->all());
-        $recipients = explode(',', 'info@cervazapava.com,dev1@grupogia.com.mx');
+        $recipients = explode(',', 'info@cervezapava.com,dev1@grupogia.com.mx');
     Mail::to($recipients)->send($correo);
     return redirect()->route('contact.index')->with('info', 'send message');
     }
