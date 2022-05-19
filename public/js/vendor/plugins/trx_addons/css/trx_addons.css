@@ -4038,7 +4038,7 @@ aside .sc_recent_news .post_item.post_accented_on {
 [class*="sc_input_hover_"] .sc_form_field_wrap, [class*="sc_input_hover_"] .comments_field_wrap {
     position: relative;
     z-index: 1;
-    display: block
+    display: block ruby
 }
 
 [class*="sc_input_hover_"] input[type="text"], [class*="sc_input_hover_"] input[type="number"], [class*="sc_input_hover_"] input[type="email"], [class*="sc_input_hover_"] input[type="password"], [class*="sc_input_hover_"] input[type="search"], [class*="sc_input_hover_"] select, [class*="sc_input_hover_"] textarea {

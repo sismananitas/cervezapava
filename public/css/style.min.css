@@ -143,7 +143,7 @@ h6 {
 }
 
 p,ul,ol,dl,blockquote,address {
-  margin: 0 0 1.5789em
+  margin: 0 0 0.5789em
 }
 
 li>ol,li>ul,dl>dd {
@@ -5494,7 +5494,7 @@ ul.instagram-pics li:before {
 }
 
 .logo_footer_wrap_inner {
-  padding: 7.15em 0;
+  padding: 4.15em 0;
   overflow: hidden;
   text-align: center;
   position: relative
@@ -5506,7 +5506,7 @@ ul.instagram-pics li:before {
   border-top-style: solid
 }
 
-.logo_footer_wrap_inner:after {
+/* .logo_footer_wrap_inner:after {
   content: ' ';
   position: absolute;
   z-index: 1;
@@ -5514,7 +5514,7 @@ ul.instagram-pics li:before {
   bottom: 0;
   width: 1px;
   height: 3.8889em
-}
+} */
 
 .logo_footer_wrap_inner img {
   max-width: 50%
@@ -5532,7 +5532,7 @@ ul.instagram-pics li:before {
 }
 
 .socials_footer_wrap_inner {
-  padding: 2.9em 0;
+  padding: 1.9em 0;
   text-align: center
 }
 
@@ -5573,7 +5573,7 @@ ul.instagram-pics li:before {
 }
 
 .menu_footer_wrap_inner {
-  padding: 2em 0;
+  padding: 1em 0;
   text-align: center
 }
 
