@@ -35,7 +35,7 @@
 	<link rel='stylesheet' id='tooltipster-css'
 		href='js/vendor/plugins/vc-extensions-bundle/profilecard/css/tooltipster.css' type='text/css' media='all' />
 	<!-- LOAD JQUERY LIBRARY -->
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
 
 	<!-- LOADING FONTS AND ICONS -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet" property="stylesheet" media="all"
