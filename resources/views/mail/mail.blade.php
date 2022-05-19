@@ -62,7 +62,7 @@ body .container .card .box {
   left: 0px;
   right: 0px;
   bottom: 0px;
-  background: #152894;
+  background: #091b1f;
   border-radius: 15px;
   display: flex;
   /* justify-content: center;

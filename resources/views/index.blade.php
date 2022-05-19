@@ -240,13 +240,13 @@
 																id="blancotext2">EL SABOR DE LA ETERNA PRIMAVERA.</h5>
 															<div class="sc_item_descr sc_promo_descr" id="blancotext3">
 																<ul>
-																	<li><strong class="blancotext4">Fermentación:</strong> Lager.</li>
-																	<li><strong class="blancotext4">Tipo de cerveza:</strong> White Wheat</li>
-																	<li><strong class="blancotext4">Color:</strong> Con tonalidades oro claro, con espuma abundante y cremosa.</li>
-																	<li><strong class="blancotext4">Sabor:</strong> Notas cítricas acercadas a cáscara de naranja, así como sabores especiados sobre el paladar.</li>
-																	<li><strong class="blancotext4">Aroma:</strong> La mezcla de malta y lúpulo despide un aroma a cereales tostados, donde también encontramos esencias cítricas.</li>
-																	<li><strong class="blancotext4">Temperatura Recomendada:</strong> Entre 3 y 5 grados centígrados.</li>
-																	<li><strong class="blancotext4">Presentación:</strong> 355 ml</li>
+																	<li><strong class="blancotext4" style="color:black;">Fermentación:</strong> Lager.</li>
+																	<li><strong class="blancotext4" style="color:black;">Tipo de cerveza:</strong> White Wheat</li>
+																	<li><strong class="blancotext4" style="color:black;">Color:</strong> Con tonalidades oro claro, con espuma abundante y cremosa.</li>
+																	<li><strong class="blancotext4" style="color:black;">Sabor:</strong> Notas cítricas acercadas a cáscara de naranja, así como sabores especiados sobre el paladar.</li>
+																	<li><strong class="blancotext4" style="color:black;">Aroma:</strong> La mezcla de malta y lúpulo despide un aroma a cereales tostados, donde también encontramos esencias cítricas.</li>
+																	<li><strong class="blancotext4" style="color:black;">Temperatura Recomendada:</strong> Entre 3 y 5 grados centígrados.</li>
+																	<li><strong class="blancotext4" style="color:black;">Presentación:</strong> 355 ml</li>
 															   </ul>
 															</div>
 															<!-- <div class="sc_item_button sc_promo_button sc_button_wrap"><a href="about-us.html" class="sc_button sc_button_simple sc_button_size_normal sc_button_icon_top"><span class="sc_button_icon"><span class="icon-down-big"></span></span><span class="sc_button_text"><span class="sc_button_title">Our Philosophy</span></span> </a>																</div> -->
