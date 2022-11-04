@@ -92,11 +92,12 @@
 							</li>
 						</ul>
 					</nav>
-					<div class="socials_mobile"><span class="social_item"><a href="#" target="_blank"
+					<div class="socials_mobile">{{-- <span class="social_item"><a href="https://www.instagram.com/cervezapava/?igshid=YmMyMTA2M2Y%3D" target="_blank"
 								class="social_icons instagram"><span class="trx_addons_icon-instagram"></span></a>
-						</span><span class="social_item"><a href="#" target="_blank"
+						</span> --}}
+						{{-- <span class="social_item"><a href="#" target="_blank"
 								class="social_icons social_facebook"><span class="trx_addons_icon-facebook"></span></a>
-						</span>
+						</span> --}}
 					</div>
 				</div>
 			</div>
@@ -258,150 +259,97 @@
 									</div>
 								</div>
 							</div>
-							<div
-								class="row vc_custom_1466154433105 row-o-full-height row-o-columns-stretch row-o-equal-height">
-								<div class="wpb_column vc_column_container column-4_12">
-									<div class="vc_column-inner ">
-										<div class="wpb_wrapper"></div>
-									</div>
-								</div>
-								<div class="wpb_column vc_column_container column-4_12 vc_col-has-fill">
-									<div class="vc_column-inner vc_custom_1466756857898">
-										<div class="wpb_wrapper">
-											<a id="sc_anchor_contacto" class="sc_anchor" title="Contacto" data-icon=""
-												data-url=""></a>
-											<div class="vc_empty_space  height_medium" style="height: 0px"></div>
-											<div
-												class="sc_promo sc_promo_default sc_promo_size_normal sc_promo_no_paddings sc_promo_no_image">
-												<div class="sc_promo_text sc_float_center" style="width: 100%;">
-													<div class="sc_promo_text_inner sc_align_center"
-														style="color: white !important;">
-														<!-- <div class="sc_promo_icon" data-icon="icon-winery"><span class="icon-winery"></span></div> -->
-														<h2 class="sc_item_title sc_promo_title"
-															style="color: white !important;">Contacto</h2>
-														<h5 class="sc_item_subtitle sc_promo_subtitle"
-															style="color: white !important;">Contáctanos por algunos de
-															los medios.</h5>
-
-														<div class="sc_form sc_form_default sc_align_center">
-															<!-- <h2 class="sc_item_title sc_form_title">Get in touch</h2> -->
-															<!-- <br>
-													<h5 class="sc_item_subtitle sc_form_subtitle" style="color: white !important;">Envíanos un mensaje</h5> -->
-															<form class="sc_form_form sc_input_hover_underline"
-																action="{{route('contact.store')}}" method="post">
-																@csrf
-
-																@if (session('info'))
-																<div class="alert1">
-																	<span class="closebtn1"
-																		onclick="this.parentElement.style.display='none';">&times;</span>
-																	<strong>Send Massage</strong>
-																</div>
-																@endif
-																<div class="sc_form_details trx_addons_columns_wrap">
-																	<div class="trx_addons_column-1_2">
-																		<label
-																			class="sc_form_field sc_form_field_name required">
-																			<span class="sc_form_field_wrap"><input
-																					type="text" name="name"
-																					id="name"><span
-																					class="sc_form_field_hover"><span
-																						class="sc_form_field_content"
-																						data-content="Name">Nombre</span></span></span>
-																		</label>
-																		@error('name')
-																		<div class="alert">
-																			<span class="closebtn"
-																				onclick="this.parentElement.style.display='none';">&times;</span>
-																			<strong>{{$message}}</strong>
-																		</div>
-																		@enderror
-																	</div>
-																	<div class="trx_addons_column-1_2">
-																		<label
-																			class="sc_form_field sc_form_field_email required">
-																			<span class="sc_form_field_wrap"><input
-																					type="text" name="email"
-																					id="email"><span
-																					class="sc_form_field_hover"><span
-																						class="sc_form_field_content"
-																						data-content="E-mail">E-mail</span></span></span>
-																		</label>
-																		@error('email')
-																		<div class="alert">
-																			<span class="closebtn"
-																				onclick="this.parentElement.style.display='none';">&times;</span>
-																			<strong>{{$message}}</strong>
-																		</div>
-																		@enderror
-																		<label
-																			class="sc_form_field sc_form_field_email required">
-																			<span class="sc_form_field_wrap"><input
-																					type="text" name="phone"
-																					id="phone"><span
-																					class="sc_form_field_hover"><span
-																						class="sc_form_field_content"
-																						data-content="Phone">Teléfono</span></span></span>
-
-																			@error('email')
-																			<div class="alert">
-																				<span class="closebtn"
-																					onclick="this.parentElement.style.display='none';">&times;</span>
-																				<strong>{{$message}}</strong>
-																			</div>
-																			@enderror
-																	</div>
-																</div>
-																<label
-																	class="sc_form_field sc_form_field_message required"><span
-																		class="sc_form_field_wrap"><textarea
-																			id="message" name="message"></textarea><span
-																			class="sc_form_field_hover"><span
-																				class="sc_form_field_content"
-																				data-content="Message">Mensaje</span></span>
-																	</span>
-																</label>
-																@error('message')
-																<div class="alert">
-																	<span class="closebtn"
-																		onclick="this.parentElement.style.display='none';">&times;</span>
-																	<strong>{{$message}}</strong>
-																</div>
-																@enderror
-																<div class="sc_form_field_wrap"
-																	style="text-align: center;">
-																	{!! NoCaptcha::renderJs('es', false,
-																	'recaptchaCallback') !!}
-																	{!! NoCaptcha::display(['data-theme' => 'dark']) !!}
-																</div>
-																@error('g-recaptcha-response')
-																<div class="alert">
-																	<span class="closebtn"
-																		onclick="this.parentElement.style.display='none';">&times;</span>
-																	<strong>La validación de captcha es
-																		obligatoria.</strong>
-																</div>
-																@enderror
-
-																<div class="sc_form_field sc_form_field_button"><button
-																		type="submit">Envíar</button></div>
-																<div class="trx_addons_message_box sc_form_result">
-																</div>
-															</form>
-														</div>
-														<!-- <div class="sc_item_button sc_promo_button sc_button_wrap">
-													<a href="#" class="sc_button sc_button_simple sc_button_size_normal sc_button_icon_top"><span class="sc_button_icon"><span class="icon-down-big"></span></span><span class="sc_button_text"><span class="sc_button_title">Join to laon wine house</span></span> </a>
-												</div> -->
-													</div>
-												</div>
-											</div>
-											<div class="vc_empty_space  height_medium" style="height: 0px"></div>
-										</div>
-									</div>
-								</div>
-								<div class="wpb_column vc_column_container column-4_12">
-								</div>
-							</div>
+							<div class="row vc_custom_1466154433105 row-o-full-height row-o-columns-stretch row-o-equal-height">
+                                <div class="wrap" >
+                                    <a id="sc_anchor_contacto" class="sc_anchor" title="Contacto" data-icon=""
+                                                data-url=""></a>
+                                    <div class="row">
+                                        <div class="wpb_column vc_column_container column-4_12" id="contact_cel"></div>
+                                            <div class="wpb_column vc_column_container column-12_12">
+                                                <div class="vc_column-inner ">
+                                                    <div class="content" style="padding-top: 50px;">
+                                                        <div class="vc_empty_space  height_medium" style="height: 0px"></div>
+                                                        
+                                                        <!-- /.sc_icons -->
+                                                        <div class="sc_form sc_form_default sc_align_center">
+                                                            <h2 class="sc_item_title sc_form_title" style="color: #ffffff !important;">Contacto</h2>
+                                                            <h5 class="sc_item_subtitle sc_form_subtitle" style="color: #ffffff !important;">Contáctanos por algunos de los medios.</h5>
+                                                            <fo rm class="sc_form_form sc_input_hover_underline" action="{{route('contact.store')}}" method="post">
+                                                                @csrf
+                                                                @if (session('info'))
+                                                                <div class="alert1">
+                                                                    <span class="closebtn1"
+                                                                        oncl ick="this.parentElement.style.display='none';">&times;</span>
+                                                                    <strong>Send Massage</strong>
+                                                                </div>
+                                                                @endif
+                                                                <div class="sc_form_details trx_addons_columns_wrap">
+                                                                    <div class="trx_addons_column-1_1">
+                                                                        <label class="sc_form_field sc_form_field_name required">
+                                                                        <span class="sc_form_field_wrap"><input type="text" name="name" id="name" aria-required="true"><span class="sc_form_field_hover"><span class="sc_form_field_content" data-content="Name">Name</span></span></span></label>
+                                                                        @error('name')
+                                                                        <div class="alert">
+                                                                            <span class="closebtn"
+                                                                                oncl ick="this.parentElement.style.display='none';">&times;</span>
+                                                                            <strong>{{$message}}</strong>
+                                                                        </div>
+                                                                        @enderror
+                                                                    </div>
+                                                                    <div class="trx_addons_column-1_2"><label class="sc_form_field sc_form_field_email required">
+                                                                        <span class="sc_form_field_wrap"><input type="text" name="email" id="email" aria-required="true"><span class="sc_form_field_hover"><span class="sc_form_field_content" data-content="E-mail">E-mail</span></span></span></label>
+                                                                        @error('email')
+                                                                        <div class="alert">
+                                                                            <span class="closebtn"
+                                                                                oncl ick="this.parentElement.style.display='none';">&times;</span>
+                                                                            <strong>{{$message}}</strong>
+                                                                        </div>
+                                                                        @enderror
+                                                                    </div><div class="trx_addons_column-1_2"><label class="sc_form_field sc_form_field_name required">
+                                                                        <span class="sc_form_field_wrap"><input type="text" name="phone" id="phone" aria-required="true"><span class="sc_form_field_hover"><span class="sc_form_field_content" data-content="Name">Teléfono</span></span></span></label>
+                                                                        @error('phone')
+                                                                            <div class="alert">
+                                                                                <span class="closebtn"
+                                                                                    oncl ick="this.parentElement.style.display='none';">&times;</span>
+                                                                                <strong>{{$message}}</strong>
+                                                                            </div>
+                                                                            @enderror
+                                                                    </div>
+                                                                </div><label class="sc_form_field sc_form_field_message required"><span class="sc_form_field_wrap"><textarea name="message" id="message" aria-required="true"></textarea><span class="sc_form_field_hover"><span class="sc_form_field_content" data-content="Message">Mensaje</span></span>    </span></label>
+                                                                @error('message')
+                                                                <div class="alert">
+                                                                    <span class="closebtn"
+                                                                        oncl ick="this.parentElement.style.display='none';">&times;</span>
+                                                                    <strong>{{$message}}</strong>
+                                                                </div>
+                                                                @enderror
+                                                                <div class="sc_form_field_wrap"
+                                                                    style="text-align: center;">
+                                                                    {!! NoCaptcha::renderJs('es', false,
+                                                                    'recaptchaCallback') !!}
+                                                                    {!! NoCaptcha::display(['data-theme' => 'dark']) !!}
+                                                                </div>
+                                                                @error('g-recaptcha-response')
+                                                                <div class="alert">
+                                                                    <span class="closebtn"
+                                                                        oncl ick="this.parentElement.style.display='none';">&times;</span>
+                                                                    <strong>La validación de captcha es
+                                                                        obligatoria.</strong>
+                                                                </div>
+                                                                @enderror
+                                                                <div class="sc_form_field sc_form_field_button"><button type="submit">Envíar Mensaje</button></div>
+                                                                <div class="trx_addons_message_box sc_form_result"></div>
+                                                            </form>
+                                                        </div>
+                                                        <!-- /.sc_form -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- .entry-content -->
+                                    <!-- </.content> -->
+                                </div>
+                                <!-- </.content_wrap> -->
+                            </div>
 							<div class="row wpb_row row-fluid" id="footer_menu">
 								<div class="wpb_column vc_column_container vc_col-sm-12">
 									<div class="vc_column-inner vc_custom_1466156080949">
@@ -427,7 +375,7 @@
 					<div class="wpb_wrapper">
 						<p><em><strong style="color: white !important;">Dirección:</strong></em><br /> Ricardo Linares
 							107 Col. Centro, 62000 Cuernavaca</p>
-						<p><em><strong style="color: white !important;">Teléfono:</strong></em><br /> +52 777 362 00 00
+						<p><em><strong style="color: white !important;">Teléfono:</strong></em><br /> +52 777 362 0011
 						</p>
 						<p><em><strong style="color: white !important;">Correo Electrónico:</strong></em><br />
 							info@cervezapava.com</p>
@@ -436,9 +384,10 @@
 			</div>
 			<div class="socials_footer_wrap socials_wrap scheme_dark">
 				<div class="socials_footer_wrap_inner">
-					</span><span class="social_item"><a href="#" target="_blank"
+					{{-- <span class="social_item"><a href="#" target="_blank"
 							class="social_icons social_facebook"><span class="trx_addons_icon-facebook"></span></a>
-					</span><span class="social_item"><a href="#" target="_blank"
+					</span> --}}
+					<span class="social_item"><a href="https://www.instagram.com/cervezapava/?igshid=YmMyMTA2M2Y%3D" target="_blank"
 							class="social_icons social_instagram"><span class="trx_addons_icon-instagram"></span></a>
 					</span>
 				</div>
@@ -476,6 +425,37 @@
 	<script type='text/javascript'
 		src='js/vendor/plugins/vc-extensions-bundle/profilecard/js/jquery.tooltipster.min.js'></script>
 	<script type='text/javascript' src='js/vendor/plugins/vc-extensions-bundle/hotspot/js/script.min.js'></script>
+	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<script>
+		window.onload = load_modal;
+
+		function load_modal(){
+			Swal.fire({
+			title: '¿Eres mayor de edad?',
+			text: '',
+			imageUrl: 'https://cervezapava.com/images/pava/logo.png',
+			imageWidth: 166,
+			imageHeight: 166,
+			background: '#fff url(/images/pava/bg_1_2.png) no-repeat',
+			imageAlt: 'Cerveza Pava',
+			allowOutsideClick: false,
+			allowEscapeKey: false,
+			showDenyButton: true,
+			confirmButtonText: 'SI',
+			denyButtonText: 'NO',
+			confirmButtonColor: '#091b1f',
+			denyButtonColor: '#091b1f',
+			backdrop: '#091b1f',
+			}).then((result) => {
+	
+			if (result.isConfirmed) {
+				
+			} else if (result.isDenied) {
+				window.location.href = "http://google.com";
+			}
+			})
+	}
+	</script>
 	<script type="text/javascript">function setREVStartSize(e) {
 			//window.requestAnimationFrame(function() {				 
 			window.RSIW = window.RSIW === undefined ? window.innerWidth : window.RSIW;
