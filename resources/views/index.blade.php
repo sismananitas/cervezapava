@@ -264,7 +264,7 @@
                                     <a id="sc_anchor_contacto" class="sc_anchor" title="Contacto" data-icon=""
                                                 data-url=""></a>
                                     <div class="row">
-                                        <div class="wpb_column vc_column_container column-4_12" id="contact_cel"></div>
+                                        <div class="wpb_column vc_column_container column-4_12" style="position: absolute;"></div>
                                             <div class="wpb_column vc_column_container column-12_12">
                                                 <div class="vc_column-inner ">
                                                     <div class="content" style="padding-top: 50px;">
